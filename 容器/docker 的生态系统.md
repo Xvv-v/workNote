@@ -46,6 +46,14 @@ libcontaienrd 是 linux 基础设施的 Docker 接口，比如 cgroup、namespac
 
 ![docker-component.png](https://blog-1252349778.cos.ap-beijing.myqcloud.com/2018/docker-component.png)
 
+### Docker 和 runC
+
+### Docker 和 contaienrd
+
+docker 将容器生命周期管理工作都交给 containerd，docker daemon 负责上层的封装编排（想搞 swarm）
+
+## Docker 组件
+
 docker 创建容器的过程：
 
 * docker 引擎创建镜像
@@ -58,3 +66,12 @@ docker 创建容器的过程：
 
 - 运行守护进程减少容器
 - 重启或者升级引擎不影响正在运行的容器
+
+
+
+
+
+参考文章：
+
+* [Docker 生态系统一览](https://www.zhangjiee.com/blog/2018/an-overall-view-on-docker-ecosystem-containers-moby-swarm-linuxkit-containerd-kubernete.html)
+* [Moby 项目](https://blog.csdn.net/weixin_26755331/article/details/108495625)
